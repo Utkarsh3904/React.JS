@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+
+  //HOOKs
              //setcounter
 let [counter,chaicounter] = useState(15)
 
