@@ -24,7 +24,7 @@ function Card({username, btnText="visit me"}) {  // define here the props and de
             type="button"
             className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-gray-800 text-gray-200"
           >
-            {btnText}  {/*same comment*/}
+            {btnText}  {/*same comment*/} {/*{btnText || "visit me }     --yhan aasie bhi default value assign kr skte hai, fir function me isse mentoion ki need nhi hogi--"*/} 
           </button>
         </div>
       </div>
