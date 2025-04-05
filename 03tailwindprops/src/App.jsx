@@ -8,7 +8,9 @@ function App() {
 
   return (
     <>
-     <h1 className="bg-green-700">test tailwoommind</h1>
+     <h1 className="bg-red-600 text-white p-4 rounded-xl text-center">
+      test tailwind
+    </h1>
 
     </>
   )
