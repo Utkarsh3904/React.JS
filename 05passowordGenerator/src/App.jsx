@@ -101,7 +101,7 @@ const CopyToClipboard = useCallback(() => {
   </div>
 
  {/* Character checkbox */}
- <div className = "flex items-center gap-x-1">
+ <div className = "flex items-center gap-x-1"> 
    <input 
    type="checkbox"
    defaultChecked={charAllowed}
