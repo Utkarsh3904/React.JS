@@ -4,4 +4,5 @@ import todoReducer from '../features/todo/todoSlice';
 
 export const store = configureStore({  //isme key vlaue daalte hai bus
     reducer: todoReducer
-})
+})   
+
