@@ -18,9 +18,9 @@ function App() {
 
   return (
     <>
-     <h1 className="bg-red-600 text-white p-8 rounded-xl">test tailwind</h1>                 // Just a button to test tailwind css
+     <h1 className="bg-red-600 text-white p-8 rounded-xl">test tailwind</h1>             // Just a button to test tailwind css
 
-    <Card username = {myObj.username}  btnText="click me" />   {/* so to pass something in button we have to pass it as props measn with a variable  */}
+    <Card username = {myObj.username} btnText="click me" />   {/* so to pass something in button we have to pass it as props measn with a variable  */}
     <Card username = "chai aur code" btnText={newArr} />     {/* button me 1234 aa gya , username here is custom */}
     <Card username = "bili bili"  />                         {/*isme bili bili aur button ke liye default value aayegi ie visit me */}
     
