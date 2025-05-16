@@ -1,4 +1,4 @@
-import conf from '../conf.js';
+import conf from '../conf/conf.js';
 import { Client, Account, ID } from "appwrite";
 
 //SEE THSI CODE IS DIRECTLY FROM APPWRITE BUT I HAVE MODIFIED IT TO WORK WITH VITE THAT WE CALLED IS QUALITY CODE.
@@ -29,16 +29,16 @@ export class AuthService {
   }
 
   //for to create an account
-  async createAccount({email, password, name}){  //might be ERROR   aayega idhar coz here userid instead of name
+  async createAccount({email, password, name}){          //might be ERROR   aayega idhar coz here userid instead of name
       try {
           const userAccount = await this.account.create(
-          ID.unique(),  // Unique ID for the user as in above second line there is id for the user
-          email,        // also in appwrite docs it is mentioned that first should be the ID.
+          ID.unique(),                                  // Unique ID for the user as in above second line there is id for the user
+          email,                                        // also in appwrite docs it is mentioned that first should be the ID.
           password,name); 
 
           // if n else is to chk ki koi bus mere se glti na hojaye
           if (userAccount){
-            return this.login ({email, password});   //call another function like login for here
+            return this.login ({email, password});      //call another function like login for here
           }
           else{
               return userAccount
@@ -58,7 +58,6 @@ export class AuthService {
  }
 
  // for to check the current user logged in or not?
-
  async getCurrentUser(){
     try {
         return await this.account.get(); //it tells ki logged in hai ya nahi
