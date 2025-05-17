@@ -9,7 +9,7 @@ function App() {
   
   return (
     <>
-      <h1>Learn about the redux toolkit</h1>
+      <h1 className="text-6xl font-extrabold text-center text-gray-800 tracking-wide my-8"> TODO</h1>
       <AddTodo />
       <Todos />
     </>

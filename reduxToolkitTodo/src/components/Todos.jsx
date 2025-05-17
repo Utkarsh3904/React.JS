@@ -8,7 +8,11 @@ function Todos() {
 
   return (
     <>
-    <div>Todos</div>
+  <p className="text-lg text-center py-4 text-gray-800 italic mb-4">
+  "Every ticked task brings you closer to your dreams."
+</p>
+
+
     <ul className="list-none">
         {todos.map((todo) => (
           <li
