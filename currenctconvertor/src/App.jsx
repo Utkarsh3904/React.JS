@@ -30,12 +30,13 @@ function App() {
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         
         style={{
-            backgroundImage: `url('https://images.pexels.com/photos/1144281/pexels-photo-1144281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
+            backgroundImage: `url(https://images.pexels.com/photos/8761154/pexels-photo-8761154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`,
         }}
     >
         <div className="w-full">
             <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 py-3 backdrop-blur-sm bg-white/30">
-            <h1 className="text-2xl text-center pb-4 text-gray-800">Currency Convertor</h1>
+            <h1 className="text-3xl font-extrabold text-center pb-6 text-gray-900 tracking-wide">Currency Converter </h1>
+
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
