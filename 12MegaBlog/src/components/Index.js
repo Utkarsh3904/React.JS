@@ -6,7 +6,7 @@ import LogoutBtn from './header/logoutBtn';
 
 export { header,
          footer,
-         container,
+         container, 
          Logo,
          LogoutBtn
-     };
+     } ;
