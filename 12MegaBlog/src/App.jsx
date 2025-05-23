@@ -4,6 +4,9 @@ import { useDispatch } from 'react-redux'
 import authservice from './appwrite/auth_services'
 import {login,logout} from './store/authSlice'
 
+import { Outlet } from 'react-router-dom';
+
+
 import './App.css'
 
 function App() {
@@ -28,11 +31,11 @@ useEffect(() => {                    //userData ko dispatch krna padega taki aut
 
 //for if not loading then show the page otherwiswe shoe null
 return !loading ?(
-  <div classname ='min-h-screen flex flex-wrap content-between bg-gray-400' >
+  <div className ='min-h-screen flex flex-wrap content-between bg-gray-400' >
     <div className='w-full block '>
       <header/>
         <main>
-         TODO: <outlet />
+         <Outlet />  
         </main>
       <footer />
     </div>
